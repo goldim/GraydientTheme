@@ -1,4 +1,19 @@
-# About the «GraydientTheme»
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/goldim/SilverBlueTheme">
+    <img src="graydienttheme.png" alt="Logo">
+  </a>
+
+  <h3 align="center"></h3>
+
+  <p align="center">
+    A theme for the Qooxdoo JavaScript Framework
+  </p>
+</p>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
 The «GraydientTheme» mainly relies on CSS techniques in order to create the appearances of widgets. 
 This makes it rather lightweight and the rendering of GUI elements shows almost no delays.
@@ -7,47 +22,46 @@ In the current version of «Graydient» a lot of items have changed compared to 
 Some people might even say that it's not the same theme anymore. Nevertheless, I hope a few people like it 
 and consider using it in one of their applications.
 
-## How to use «GraydientTheme»
+**Form Controls**
+<img src="graydienttheme_Form.png" alt="Screen shot example">
 
-1. Download the theme files and unzip the contents into an appropriate folder named "GraydientTheme" on your local machine. 
-(Recommendation: Put the theme outside of the qooxdoo SDK folder, but on the same directory level.)
-
-2. Modify the contrib.json file of your application by adding «GraydientTheme» as a library, e.g.
-  ```
-  [...]
-  "jobs" :
+<!-- GETTING STARTED -->
+## Using the Theme in your Application
+To use the Theme in your application, go into the application root directory and install the theme into your project:
+```sh
+$ qx package update
+$ qx package list
+$ qx package install goldim/GraydientTheme
+```
+now you just have to modify your compile.json to enable the theme:
+```sh
+"applications": [
   {
-    "libraries" :
-    {
-      "library" :
-      [
-        {
-          "manifest" : "../GraydientTheme/Manifest.json"
-        }
-      ]
-    }
+    ...
+    "theme": "graydienttheme.theme.Theme",
+    ...
   }
-  [...]
-  ```
-3. Change the `QXTHEME` key in `config.json` to `"graydienttheme.theme.Theme"`. This way the theme of your application is 
-**replaced** by «GraydientTheme». The downside to this approach: If you want to modify and/or extend the "graydient" appearance 
-of your application you have to do this directly in the «GraydientTheme» theme files which may later lead to subtle bugs or
-strange side effects.
-You might, therefore, want to invest a few more minutes, leave the `QXTHEME` key in `config.json` untouched and let
-your predefined application theme **inherit** from «GraydientTheme» instead of being replaced by it. To do this, go to the 
-theme folder of your application and modify Appearance.js, Color.js, Decoration.js and Font.js as shown in this 
-example:
-  ```
-  qx.Theme.define("myapp.theme.Appearance",
-  {
-    //extend : qx.theme.modern.Appearance,
-    extend : graydienttheme.theme.Appearance,
+],
+```
 
-    appearances :
-    {
-    }
-  });
-  ```
-Now you can safely add new appearances, decorators, colors and fonts, or overwrite existing ones.
+<!-- DEMOS -->
+## Demo
+Using Qooxdoos [WidgetBrowser](http://qooxdoo.org/qxl.packagebrowser/qxl.packagebrowser/demos/goldim/GraydientTheme/widgetbrowser/)
 
-4. Generate your application and your are done.
+<!-- ROADMAP -->
+## Roadmap
+
+TBD
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Norbert Schröder - [@scro34](http://scro34.de/) - email: n.schroeder@scro34.de
