@@ -1661,7 +1661,12 @@ qx.Theme.define("graydienttheme.theme.Decoration",
         shadowColor: "close-button",
         endColor: "close-button-hovered"
       }
+    },
+
+    // Demo Decorators
+    "theme-demo-title-separator":
+    {
+      include: "slider-knob-horizontal"
     }
-    
   }
 });

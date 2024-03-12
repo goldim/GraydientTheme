@@ -53,6 +53,10 @@ Using Qooxdoos [WidgetBrowser](http://qooxdoo.org/qxl.packagebrowser/qxl.package
 
 TBD
 
+## TODO
+
+ - Fix name of theme (now it is cut)
+ - Fix media player knob
 
 <!-- LICENSE -->
 ## License
