@@ -55,7 +55,6 @@ TBD
 
 ## TODO
 
- - Fix name of theme (now it is cut)
  - Fix media player knob
 
 <!-- LICENSE -->
